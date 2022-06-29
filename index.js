@@ -39,3 +39,15 @@ function myFind(collection, predicate) {
         if (predicate(elem)) return elem
     }
 }
+
+function myFilter(collection, predicate) {
+    const array = Object.values(collection)
+
+    const newArray = []
+    for (const elem of array) {
+        if(predicate(elem)) {
+            newArray.push(elem)
+        }
+    }
+    return newArray
+}
