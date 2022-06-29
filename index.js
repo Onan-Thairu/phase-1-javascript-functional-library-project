@@ -51,3 +51,8 @@ function myFilter(collection, predicate) {
     }
     return newArray
 }
+
+function mySize(collection) {
+    const array = Object.values(collection)
+    return array.length
+}
