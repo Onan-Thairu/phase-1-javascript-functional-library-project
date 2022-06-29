@@ -14,3 +14,20 @@ function myMap(collection, callback) {
     }
     return newArray
 }
+
+function myReduce(collection, callback, acc) {
+    const array = Object.values(collection)
+    
+    if (acc) {
+        for (let i=0; i<array.length; i++) {
+          acc = callback(acc, array[i], array)
+        }
+        return acc
+    } else {
+        let acc = array[0]
+        for (let i=1; i<array.length; i++) {
+          acc = callback(acc, array[i], array)
+        }
+        return acc
+    }
+}
