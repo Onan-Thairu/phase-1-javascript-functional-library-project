@@ -1,3 +1,5 @@
+// Collection Functions (Arrays or Objects)
+
 function myEach(collection, callback) {
     const array = Object.values(collection)
     for (const elem of array) {
@@ -55,4 +57,14 @@ function myFilter(collection, predicate) {
 function mySize(collection) {
     const array = Object.values(collection)
     return array.length
+}
+
+// Array Functions
+
+function myFirst(array, n) {
+    if (n) {
+        return array.slice(0, n)
+    } else {
+        return array[0]
+    }
 }
