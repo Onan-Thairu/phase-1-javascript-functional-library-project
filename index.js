@@ -76,3 +76,9 @@ function myLast(array, n) {
         return array[array.length - 1]
     }
 }
+
+// Object Functions
+
+function myKeys(object) {
+    return Object.keys(object)
+}
