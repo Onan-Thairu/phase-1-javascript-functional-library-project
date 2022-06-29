@@ -68,3 +68,11 @@ function myFirst(array, n) {
         return array[0]
     }
 }
+
+function myLast(array, n) {
+    if (n) {
+        return array.slice(-n)
+    } else {
+        return array[-1]
+    }
+}
