@@ -31,3 +31,11 @@ function myReduce(collection, callback, acc) {
         return acc
     }
 }
+
+function myFind(collection, predicate) {
+    const array = Object.values(collection)
+
+    for (const elem of array) {
+        if (predicate(elem)) return elem
+    }
+}
